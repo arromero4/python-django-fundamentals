@@ -1,0 +1,19 @@
+
+python crash course
+sudo apt install python3-pip
+pip install virtualenv
+virtualenv --version
+
+source venv/bin/activate
+
+pip install django
+python -m django --version
+django-admin startproject mysite .
+python manage.py runserver
+
+python manage.py starapp blog
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py shell
