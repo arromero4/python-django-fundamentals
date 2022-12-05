@@ -17,3 +17,11 @@ python manage.py makemigrations
 python manage.py migrate
 
 python manage.py shell
+
+rom myapp.models import Project, Task
+p = Project(name="aplicacion movil")
+p.save()
+Project.objects.all()
+Project.objects.get(id=1)
+
+Project.objects.filter(name__startswith="aplicacion")
