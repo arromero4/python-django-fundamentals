@@ -25,3 +25,5 @@ Project.objects.all()
 Project.objects.get(id=1)
 
 Project.objects.filter(name__startswith="aplicacion")
+
+python manage.py createsupeser
