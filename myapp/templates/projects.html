@@ -8,10 +8,10 @@
 </head>
 <body>
     <h1>Projects</h1>
-    <ul>
-        <li>Project</li>
-        <li>Project</li>
-        <li>Project</li>
-    </ul>
+    {% for project in projects %}
+    <div>
+        <h1>{{project.name}}</h1>
+    </div>
+    {% endfor%}
 </body>
 </html>
