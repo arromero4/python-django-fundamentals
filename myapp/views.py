@@ -27,7 +27,7 @@ def projects(request):
         'projects': projects
     })
 
-def tasks(request, id):
+def tasks(request):
     #task =  get_object_or_404(Task, id=id)
     #return HttpResponse('tasks %s' % task.title)
     tasks = Task.objects.all()

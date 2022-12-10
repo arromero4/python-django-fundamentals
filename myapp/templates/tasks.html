@@ -7,6 +7,9 @@
     <title>Document</title>
   </head>
   <body>
+
+    {% extends 'base.html' %}
+    {% block content %}
     <h1>Tasks</h1>
     {% for task in tasks%} 
     <div>
@@ -19,5 +22,7 @@
         </button>
     </div>
     {% endfor %}
+    {% endblock%}
+   
   </body>
 </html>
