@@ -8,12 +8,16 @@
 </head>
 <body>
     {% extends 'base.html' %}
-    {% load static %}
     {% block content %}
-    <h1>{{title}}</h1>
-    <img src="{%static 'logo2.png'%}" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, vero. Aliquid fuga sapiente eaque cum molestiae consequatur facere corrupti cupiditate beatae esse rerum deleniti nobis sequi reprehenderit atque, totam neque.</p>
+    <h1>Create Project</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+    <button>
+        Save
+    </button>
+    </form>
+ 
     {% endblock%}
-    
 </body>
 </html>

@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Detail</title>
 </head>
 <body>
     {% extends 'base.html' %}
     {% block content %}
-    <h1>Projects</h1>
-    {% for project in projects %}
+    <h1>Details: {{project}}</h1>
+    
+    {% for task in tasks %}
     <div class="card">
-        <a href="{% url 'project_detail' project.id %}">
-            <h1>{{project.name}}</h1>
-        </a>
+        <h1>{{task.title}}</h1>
+        <p>{{task.description}}</p>
     </div>
     {% endfor%}
     {% endblock%}
-    
 </body>
 </html>
